@@ -13,4 +13,8 @@ node[:deploy].each do |application, deploy|
 	execute "/usr/local/bin/environment.sh" do
 		action :run
 	end
+	
+	package "fontconfig" do
+    		action :install # see actions section below
+	end
 end
