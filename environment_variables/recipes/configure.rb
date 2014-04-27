@@ -16,7 +16,7 @@ node[:deploy].each do |application, deploy|
 	
 	#ENV["PATH"] = ENV["PATH"] + ":./node_modules/phantomjs/bin"
 	
-	package "fontconfig" do
-    		action :install # see actions section below
-	end
+	#package "fontconfig" do
+    	#	action :install # see actions section below
+	#end
 end
