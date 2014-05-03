@@ -1,1 +1,9 @@
-cookbook 'phantomjs', git: 'git://github.com/customink-webops/phantomjs.git'
+def dependencies(path)
+  berks = "#{path}/Berksfile.in"
+  instance_eval(File.read(berks)) if File.exists?(berks)
+end
+
+Dir.glob('./*').each do |path|
+  dependencies path
+  cookbook File.basename(path), :path => path
+end
