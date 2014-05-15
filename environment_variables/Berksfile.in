@@ -1,5 +1,4 @@
 metadata
 
 cookbook 'phantomjs', git: 'git://github.com/customink-webops/phantomjs.git'
-cookbook 'environment_variables', git: 'git://github.com/vlamic/OpsWorksEnvy.git'
 
