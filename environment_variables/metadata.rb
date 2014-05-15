@@ -1,2 +1,3 @@
-name   'environment_variables'
+name   'ZvikaEnv'
 depends 'phantomjs'
+depends 'environment_variables'
